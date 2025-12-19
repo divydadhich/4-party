@@ -116,11 +116,11 @@ useEffect(() => {
 <div className="mb-10">
 
 {/* Headings */}
-<div className="flex items-center justify-between mb-3 px-1">
-  <span className="text-s  tracking-wide text-white/60">
+<div className="flex items-center justify-between mb-3 px-10">
+  <span className="text-lg  tracking-wide text-white/60">
     Level Range (Lv.)
   </span>
-  <span className="text-s  tracking-wide text-white/60">
+  <span className="text-lg  tracking-wide text-white/60">
     Level icon
   </span>
 </div>
@@ -143,7 +143,7 @@ useEffect(() => {
     ["101–110", 110],
     ["111–120", 120],
   ].map(([range, lvl]) => (
-    <div key={lvl} className="flex items-center justify-between px-1">
+    <div key={lvl} className="flex items-center justify-between px-13">
 
       {/* Level Range */}
       <span className="text-lg text-white/80">
