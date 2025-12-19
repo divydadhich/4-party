@@ -106,63 +106,61 @@ export default function Game() {
             </div>
           </div>
 
-          {/* ================= LEVEL LIST ================= */}
-          <div className="mb-10">
+         {/* ================= LEVEL LIST ================= */}
+<div className="mb-10">
 
-            {/* Headings */}
-            <div className="flex items-center justify-between mb-3 px-10 ">
-              <span className="text-lg text-white/60">
-                Level range (Lv.)
-              </span>
-              <span className="text-lg text-white/60 text-center ">
-                Level icons
-              </span>
-            </div>
+{/* Headings */}
+<div className="flex items-center justify-between mb-3 px-10">
+  <span className="text-lg  tracking-wide text-white/60">
+    Level range (Lv.)
+  </span>
+  <span className="text-lg  tracking-wide text-white/60">
+    Level icons
+  </span>
+</div>
 
-            {/* Rows */}
-            <div className="space-y-4">
-              {[
-                ["1–10", ],
-                ["11–20", ],
-                ["21–30", ],
-                ["31–40", ],
-                ["41–50", ],
-                ["51–60", ],
-                ["61–70", ],
-                ["71–80", ],
-                ["81–90", ],
-                ["91–100", ],
-                ["101–110", ],
-                ["111–120", ],
-              ].map(([range, lvl]) => (
-                <div
-                  key={lvl}
-                  className="grid grid-cols-2 gap-4 items-center px-13"
-                >
-                  <span className="text-base text-white/80">
-                    {range}
-                  </span>
 
-                  <div className="flex justify-center">
-                    <div className="relative w-16 h-8">
-                      <img
-                        src={i1}
-                        alt={`Level ${lvl}`}
-                        className="w-full h-full object-contain"
-                      />
-                      <span
-                        className="absolute inset-0 flex items-center justify-center
-                        text-xs font-bold text-white drop-shadow"
-                      >
-                        {lvl}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
+{/* Levels */}
+<div className="space-y-4  ">
+  {[
+    ["1–10", 10],
+    ["11–20", 20],
+    ["21–30", 30],
+    ["31–40", 40],
+    ["41–50", 50],
+    ["51–60", 60],
+    ["61–70", 70],
+    ["71–80", 80],
+    ["81–90", 90],
+    ["91–100", 100],
+    ["101–110", 110],
+    ["111–120", 120],
+  ].map(([range, lvl]) => (
+    <div key={lvl} className="flex items-center justify-between px-13">
+
+      {/* Level Range */}
+      <span className="text-lg text-white/80">
+        {range}
+      </span>
+
+    {/* Level Icon – Image */}
+<div className="relative w-17 h-10 flex items-center justify-center">
+  <img
+    src={i1}
+    alt="Level Icon"
+    className="w-full h-full object-contain"
+  />
+
+</div>
+
+
+
+    </div>
+  ))}
+</div>
+</div>
+</div>
 
         {/* ================= HOW TO UPGRADE ================= */}
         <div
