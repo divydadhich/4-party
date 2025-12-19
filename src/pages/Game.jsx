@@ -110,7 +110,7 @@ export default function Game() {
           <div className="mb-10">
 
             {/* Headings */}
-            <div className="grid grid-cols-2 gap-4 mb-4 px-10 ">
+            <div className="flex items-center justify-between mb-3 px-10 ">
               <span className="text-lg text-white/60">
                 Level range (Lv.)
               </span>

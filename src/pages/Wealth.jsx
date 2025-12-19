@@ -124,10 +124,10 @@ export default function Wealth() {
 {/* Headings */}
 <div className="flex items-center justify-between mb-3 px-10">
   <span className="text-lg  tracking-wide text-white/60">
-    Level Range (Lv.)
+    Level range (Lv.)
   </span>
   <span className="text-lg  tracking-wide text-white/60">
-    Level icon
+    Level icons
   </span>
 </div>
 
