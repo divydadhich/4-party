@@ -33,13 +33,7 @@ export default function Wealth() {
     <div className="min-h-screen w-full bg-gradient-to-b from-[#171737] to-[#0b0b24] text-white flex justify-center  ">
       <div className="w-full max-w-[390px] px-4 pt-4 pb-10 ">
 
-        {/* ================= HEADER ================= */}
-        
-        <div className="relative flex items-center justify-center mb-6 ">
-          <button className="absolute left-0 text-xl">‹</button>
-          <h1 className="text-lg font-semibold">Personal Level</h1>
-          <button className="absolute right-0 text-xl">✕</button>
-        </div>
+       
 
        {/* ================= TABS ================= */}
 <LevelTabs />
