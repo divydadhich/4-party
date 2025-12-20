@@ -1,4 +1,5 @@
 import LevelTabs from "../components/LevelTabs";
+import PageHeader from "../components/PageHeader";
 import { useEffect, useState } from "react";
 import i1 from "../assets/icon1.jpg"
 import Avatar from "../assets/avatar.jpeg"
@@ -32,12 +33,13 @@ export default function Wealth() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-[#171737] to-[#0b0b24] text-white flex justify-center  ">
       <div className="w-full max-w-[390px] px-4 pt-4 pb-10 ">
+      <PageHeader title="Level" />
 
-       
 
        {/* ================= TABS ================= */}
 <LevelTabs />
 
+   
         {/* ================= LEVEL CARD ================= */}
         <div className="border-2 border-[#6f73ff]/60 rounded-2xl">
 <div className="relative mb-8 ">

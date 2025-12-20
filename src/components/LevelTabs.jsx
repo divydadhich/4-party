@@ -10,7 +10,7 @@ export default function LevelTabs() {
   const inactive = "opacity-50";
 
   return (
-    <div className="flex justify-around mb-6">
+    <div className="flex justify-around mt-10 mb-6">
       <NavLink to="/wealth" className={({ isActive }) => `${base} ${isActive ? active : inactive}`}>
         Wealth
       </NavLink>
